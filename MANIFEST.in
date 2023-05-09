@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vendor_registration *.css
+recursive-include vendor_registration *.csv
+recursive-include vendor_registration *.html
+recursive-include vendor_registration *.ico
+recursive-include vendor_registration *.js
+recursive-include vendor_registration *.json
+recursive-include vendor_registration *.md
+recursive-include vendor_registration *.png
+recursive-include vendor_registration *.py
+recursive-include vendor_registration *.svg
+recursive-include vendor_registration *.txt
+recursive-exclude vendor_registration *.pyc
