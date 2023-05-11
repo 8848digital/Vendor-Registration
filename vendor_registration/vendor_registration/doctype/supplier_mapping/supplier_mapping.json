@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Supplier Mapping",
+ "creation": "2023-05-10 10:25:56.437834",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_field_mapping"
+ ],
+ "fields": [
+  {
+   "description": "Data Type Must Be Same.",
+   "fieldname": "supplier_field_mapping",
+   "fieldtype": "Table",
+   "label": "Supplier Field Mapping",
+   "options": "Supplier Field Mapping"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-11 11:33:54.779321",
+ "modified_by": "Administrator",
+ "module": "Vendor Registration",
+ "name": "Supplier Mapping",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
