@@ -13,8 +13,10 @@ def get_doc_field(doctype, another_doctype):
 
 @frappe.whitelist()
 def get_fieldtype(doctype, fieldname):
-    fieldtype = frappe.get_meta(doctype).get_field(fieldname).__dict__['fieldtype']
-    return fieldtype
+    if frappe.get_meta(doctype).get_field(fieldname):
+        fieldtype = frappe.get_meta(doctype).get_field(fieldname).__dict__['fieldtype']
+        return fieldtype
+    return ""
 
 def link_update_supplier(doc, method):
     if doc.supplier_update_from:
@@ -24,3 +26,10 @@ def link_update_supplier(doc, method):
         new_doc.update_supplier = doc.name
         new_doc.save(ignore_permissions=True)
         # pass
+def link_update_customer(doc, method):
+    if doc.customer_update_to:
+        # create new doc who has workflow
+        new_doc = frappe.new_doc("Customer Update Approval")
+        new_doc.customer = doc.customer_update_to
+        new_doc.update_customer = doc.name
+        new_doc.save(ignore_permissions=True)

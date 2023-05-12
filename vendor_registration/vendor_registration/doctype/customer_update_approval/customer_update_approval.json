@@ -1,31 +1,38 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:Supplier Mapping",
- "creation": "2023-05-10 10:25:56.437834",
+ "autoname": "format:{customer}-{####}",
+ "creation": "2023-05-11 12:40:33.801416",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "supplier_field_mapping"
+  "customer",
+  "update_customer"
  ],
  "fields": [
   {
-   "description": "Data Type Must Be Same.",
-   "fieldname": "supplier_field_mapping",
-   "fieldtype": "Table",
-   "label": "Supplier Field Mapping",
-   "options": "Field Mapping"
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "update_customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Update Customer",
+   "options": "Customer"
   }
  ],
  "index_web_pages_for_search": 1,
- "issingle": 1,
  "links": [],
- "modified": "2023-05-11 12:36:32.152443",
+ "modified": "2023-05-11 12:40:33.801416",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
- "name": "Supplier Mapping",
+ "name": "Customer Update Approval",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -33,8 +40,10 @@
    "create": 1,
    "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
+   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
