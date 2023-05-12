@@ -32,7 +32,8 @@ app_license = "MIT"
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {
     "Supplier": "public/js/supplier_custom.js",
-    "Customer": "public/js/customer_custom.js"
+    "Customer": "public/js/customer_custom.js",
+    "Item": "public/js/item_custom.js"
     }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -119,6 +120,9 @@ doc_events = {
     },
     "Customer": {
         "after_insert": "vendor_registration.utils.link_update_customer"
+    },
+    "Item": {
+        "after_insert": "vendor_registration.utils.link_update_item"
     }
 }
 # Scheduled Tasks

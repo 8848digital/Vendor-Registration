@@ -33,3 +33,11 @@ def link_update_customer(doc, method):
         new_doc.customer = doc.customer_update_to
         new_doc.update_customer = doc.name
         new_doc.save(ignore_permissions=True)
+
+def link_update_item(doc, method):
+    if doc.item_update_to:
+        # create new doc who has workflow
+        new_doc = frappe.new_doc("Item Update Approval")
+        new_doc.item = doc.item_update_to
+        new_doc.update_item = doc.name
+        new_doc.save(ignore_permissions=True)
