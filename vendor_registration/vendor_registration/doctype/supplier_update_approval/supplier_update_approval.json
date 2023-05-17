@@ -9,27 +9,43 @@
  "engine": "InnoDB",
  "field_order": [
   "supplier",
-  "update_supplier"
+  "update_supplier",
+  "data",
+  "section_break_jvcr7",
+  "table_html"
  ],
  "fields": [
   {
    "fieldname": "supplier",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Supplier",
-   "options": "Supplier"
+   "label": "Supplier"
   },
   {
    "fieldname": "update_supplier",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Update Supplier",
-   "options": "Supplier"
+   "label": "Update Supplier"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Data"
+  },
+  {
+   "fieldname": "section_break_jvcr7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_html",
+   "fieldtype": "HTML",
+   "label": "Table HTML"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-10 16:10:50.503042",
+ "modified": "2023-05-16 17:40:27.890647",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Supplier Update Approval",

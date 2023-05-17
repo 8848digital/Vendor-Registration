@@ -1,5 +1,5 @@
 import frappe
-
+from frappe.core.doctype.version.version import get_diff
 
 @frappe.whitelist()
 def get_doc_field(doctype, another_doctype):
@@ -24,6 +24,10 @@ def link_update_supplier(doc, method):
         new_doc = frappe.new_doc("Supplier Update Approval")
         new_doc.supplier = doc.supplier_update_from
         new_doc.update_supplier = doc.name
+        old = frappe.get_doc("Supplier", doc.supplier_update_from) #original
+        new = frappe.get_doc("Supplier", doc.name) # duplicate
+        diff = get_diff(old, new, for_child=True)
+        new_doc.data = frappe.as_json(diff, indent=None, separators=(",", ":"))
         new_doc.save(ignore_permissions=True)
         # pass
 def link_update_customer(doc, method):
