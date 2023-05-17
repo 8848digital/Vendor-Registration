@@ -19,13 +19,15 @@
    "fieldname": "supplier",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Supplier"
+   "label": "Supplier",
+   "read_only": 1
   },
   {
    "fieldname": "update_supplier",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Update Supplier"
+   "label": "Update Supplier",
+   "read_only": 1
   },
   {
    "fieldname": "data",
@@ -45,7 +47,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-16 17:40:27.890647",
+ "modified": "2023-05-17 16:51:06.674389",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Supplier Update Approval",

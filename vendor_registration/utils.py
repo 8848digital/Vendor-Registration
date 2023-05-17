@@ -36,6 +36,10 @@ def link_update_customer(doc, method):
         new_doc = frappe.new_doc("Customer Update Approval")
         new_doc.customer = doc.customer_update_to
         new_doc.update_customer = doc.name
+        old = frappe.get_doc("Customer", doc.customer_update_to) #original
+        new = frappe.get_doc("Customer", doc.name) # duplicate
+        diff = get_diff(old, new, for_child=True)
+        new_doc.data = frappe.as_json(diff, indent=None, separators=(",", ":"))
         new_doc.save(ignore_permissions=True)
 
 def link_update_item(doc, method):
@@ -44,4 +48,8 @@ def link_update_item(doc, method):
         new_doc = frappe.new_doc("Item Update Approval")
         new_doc.item = doc.item_update_to
         new_doc.update_item = doc.name
+        old = frappe.get_doc("Item", doc.item_update_to) #original
+        new = frappe.get_doc("Item", doc.name) # duplicate
+        diff = get_diff(old, new, for_child=True)
+        new_doc.data = frappe.as_json(diff, indent=None, separators=(",", ":"))
         new_doc.save(ignore_permissions=True)

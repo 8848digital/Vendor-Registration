@@ -9,27 +9,45 @@
  "engine": "InnoDB",
  "field_order": [
   "item",
-  "update_item"
+  "update_item",
+  "data",
+  "section_break_rddgz",
+  "table_html"
  ],
  "fields": [
   {
    "fieldname": "item",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Item",
-   "options": "Item"
+   "read_only": 1
   },
   {
    "fieldname": "update_item",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Update Item",
-   "options": "Item"
+   "read_only": 1
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Data"
+  },
+  {
+   "fieldname": "section_break_rddgz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_html",
+   "fieldtype": "HTML",
+   "label": "Table HTML"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-12 12:21:06.736556",
+ "modified": "2023-05-17 16:50:09.135089",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Item Update Approval",
