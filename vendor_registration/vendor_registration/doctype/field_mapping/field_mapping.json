@@ -23,6 +23,7 @@
   {
    "fieldname": "registration_datatype",
    "fieldtype": "Read Only",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Data Type"
   },
@@ -39,6 +40,7 @@
   {
    "fieldname": "doc_datatype",
    "fieldtype": "Read Only",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Data Type"
   }
@@ -46,7 +48,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-05-11 13:02:25.016090",
+ "modified": "2023-05-18 14:48:24.087549",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Field Mapping",
