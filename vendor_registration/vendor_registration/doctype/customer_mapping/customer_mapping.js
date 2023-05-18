@@ -12,21 +12,21 @@ frappe.ui.form.on('Customer Mapping', {
 			})
 	},
 	validate: function(frm) {
-		cur_frm.get_field('customer_field_mapping').grid.grid_rows[0].row.show()
+		let flag = 0
+		cur_frm.doc.customer_field_mapping.forEach((row) => {
+			if (row.doc_datatype !== row.registration_datatype) {
+				flag = 1
+			}
+		})
+		if (flag) {
+			frappe.throw("Data Type Must Be Same")
+		}
 	}
 });
 
 frappe.ui.form.on('Field Mapping', {
 	customer_field_mapping_add: function(frm, cdt, cdn) {
-		// first row has bug does not update option so hide the row.
-		// get_customer_fields()
-		// 		.then((data) => {
-		// 			let customer_registration_options = data.message[0]
-		// 			let customer_options = data.message[1]
-		// 			cur_frm.get_field('customer_field_mapping').grid.grid_rows[0].row.hide()
-		// 			frappe.meta.get_docfield("Field Mapping", "registration_field", cur_frm.doc.name).options = [""].concat(customer_registration_options)
-		// 			frappe.meta.get_docfield("Field Mapping", "doc_field", cur_frm.doc.name).options = [""].concat(customer_options)
-		// 		})
+		
 	},
 	registration_field: async function(frm, cdt, cdn) {
 		let child = locals[cdt][cdn]

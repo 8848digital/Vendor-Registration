@@ -12,7 +12,16 @@ frappe.ui.form.on('Supplier Mapping', {
 				})
 	},
 	validate: function(frm) {
-		cur_frm.get_field('supplier_field_mapping').grid.grid_rows[0].row.show()
+		// cur_frm.get_field('supplier_field_mapping').grid.grid_rows[0].row.show()
+		let flag = 0
+		cur_frm.doc.supplier_field_mapping.forEach((row) => {
+			if (row.doc_datatype !== row.registration_datatype) {
+				flag = 1
+			}
+		})
+		if (flag) {
+			frappe.throw("Data Type Must Be Same")
+		}
 	}
 });
 
