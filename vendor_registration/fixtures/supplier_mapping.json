@@ -1,0 +1,253 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Supplier Mapping",
+  "modified": "2023-06-16 17:40:04.017442",
+  "name": "Supplier Mapping",
+  "supplier_field_mapping": [
+   {
+    "doc_datatype": "Select",
+    "doc_field": "naming_series",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Select",
+    "registration_field": "naming_series"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "supplier_name",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "supplier_name"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "country",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "country"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "supplier_group",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "supplier_group"
+   },
+   {
+    "doc_datatype": "Select",
+    "doc_field": "supplier_type",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Select",
+    "registration_field": "supplier_type"
+   },
+   {
+    "doc_datatype": "Check",
+    "doc_field": "is_transporter",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Check",
+    "registration_field": "is_transporter"
+   },
+   {
+    "doc_datatype": "Attach Image",
+    "doc_field": "image",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Attach Image",
+    "registration_field": "image"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "default_currency",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "default_currency"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "default_bank_account",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "default_bank_account"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "default_price_list",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "default_price_list"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "payment_terms",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "payment_terms"
+   },
+   {
+    "doc_datatype": "Check",
+    "doc_field": "is_internal_supplier",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Check",
+    "registration_field": "is_internal_supplier"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "represents_company",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "represents_company"
+   },
+   {
+    "doc_datatype": "Text",
+    "doc_field": "supplier_details",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Text",
+    "registration_field": "supplier_details"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "website",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "website"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "language",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "language"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "tax_id",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "tax_id"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "tax_category",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "tax_category"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "tax_withholding_category",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "tax_withholding_category"
+   },
+   {
+    "doc_datatype": "Autocomplete",
+    "doc_field": "gstin",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Autocomplete",
+    "registration_field": "gstin"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "pan",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "pan"
+   },
+   {
+    "doc_datatype": "Select",
+    "doc_field": "gst_category",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Select",
+    "registration_field": "gst_category"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "gst_transporter_id",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "gst_transporter_id"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "supplier_primary_contact",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "supplier_primary_contact"
+   },
+   {
+    "doc_datatype": "Text",
+    "doc_field": "primary_address",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Text",
+    "registration_field": "primary_address"
+   },
+   {
+    "doc_datatype": "Check",
+    "doc_field": "allow_purchase_invoice_creation_without_purchase_order",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Check",
+    "registration_field": "allow_purchase_invoice_creation_without_purchase_order"
+   },
+   {
+    "doc_datatype": "Check",
+    "doc_field": "allow_purchase_invoice_creation_without_purchase_receipt",
+    "parent": "Supplier Mapping",
+    "parentfield": "supplier_field_mapping",
+    "parenttype": "Supplier Mapping",
+    "registration_datatype": "Check",
+    "registration_field": "allow_purchase_invoice_creation_without_purchase_receipt"
+   }
+  ]
+ }
+]

@@ -57,7 +57,8 @@ fixtures = [
                          "supplier-registration-form","customer-registration-form"
                      ]
                      ]
-        }
+        },
+        "doctype": "Supplier Mapping"
     },
 ]
 # Home Pages
