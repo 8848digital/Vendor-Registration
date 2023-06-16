@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 class CustomerRegistration(Document):
-	
+        
 
 	def on_update(self):
 		if self.workflow_state == "Approved":

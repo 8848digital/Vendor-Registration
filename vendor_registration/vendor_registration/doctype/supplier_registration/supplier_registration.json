@@ -13,6 +13,7 @@
   "naming_series",
   "supplier_name",
   "country",
+  "related_party",
   "column_break0",
   "supplier_group",
   "supplier_type",
@@ -517,10 +518,12 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Unregistered",
    "fieldname": "gst_category",
    "fieldtype": "Select",
    "label": "GST Category",
-   "options": "Registered Regular\nRegistered Composition\nUnregistered\nSEZ\nOverseas\nDeemed Export\nUIN Holders\nTax Deductor"
+   "options": "Registered Regular\nRegistered Composition\nUnregistered\nSEZ\nOverseas\nDeemed Export\nUIN Holders\nTax Deductor",
+   "reqd": 1
   },
   {
    "fieldname": "gst_transporter_id",
@@ -556,6 +559,13 @@
    "fieldname": "cin_attachment",
    "fieldtype": "Attach",
    "label": "CIN Attachment"
+  },
+  {
+   "fieldname": "related_party",
+   "fieldtype": "Select",
+   "label": "Related Party",
+   "options": "No\nYes",
+   "translatable": 1
   }
  ],
  "icon": "fa fa-user",
@@ -567,7 +577,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2023-06-16 14:08:33.614327",
+ "modified": "2023-06-16 22:24:37.988817",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Supplier Registration",
