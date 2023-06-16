@@ -50,6 +50,14 @@ fixtures = [
             ]
             ]
         },
+        "doctype": "Web Form",
+        "filters": {
+            "name": ["in",
+                     [
+                         "supplier-registration-form","customer-registration-form"
+                     ]
+                     ]
+        }
     },
 ]
 # Home Pages
