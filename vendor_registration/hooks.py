@@ -38,27 +38,30 @@ doctype_js = {
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-fixtures = [
+fixtures = ["Supplier Mapping", "Customer Mapping",
     {
-        "doctype": "Workflow",
-        "filters": {
-            "name": ["in", 
+        "dt": "Workflow",
+        "filters": [
             [
+            "name", "in", 
+                [
                 "Supplier Registration Workflow", "Supplier Update Approval Workflow",
                 "Customer Registration Workflow", "Customer Update Approval Workflow",
                 "Item Registration Workflow", "Item Update Approval Workflow",
+                ]
             ]
+        ]
+    },
+    {
+        "dt": "Web Form",
+        "filters": [
+            [
+            "name","in",
+                [
+                "supplier-registration-form","customer-registration-form"
+                ]
             ]
-        },
-        "doctype": "Web Form",
-        "filters": {
-            "name": ["in",
-                     [
-                         "supplier-registration-form","customer-registration-form"
-                     ]
-                     ]
-        },
-        "doctype": "Supplier Mapping"
+        ]
     },
 ]
 # Home Pages

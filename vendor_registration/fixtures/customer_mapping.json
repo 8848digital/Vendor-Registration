@@ -1,0 +1,316 @@
+[
+ {
+  "customer_field_mapping": [
+   {
+    "doc_datatype": "Select",
+    "doc_field": "naming_series",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Select",
+    "registration_field": "naming_series"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "salutation",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "salutation"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "customer_name",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "customer_name"
+   },
+   {
+    "doc_datatype": "Select",
+    "doc_field": "customer_type",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Select",
+    "registration_field": "customer_type"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "customer_group",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "customer_group"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "territory",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "territory"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "gender",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "gender"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "lead_name",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "lead_name"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "opportunity_name",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "opportunity_name"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "account_manager",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "account_manager"
+   },
+   {
+    "doc_datatype": "Attach Image",
+    "doc_field": "image",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Attach Image",
+    "registration_field": "image"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "default_price_list",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "default_price_list"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "default_bank_account",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "default_bank_account"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "default_currency",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "default_currency"
+   },
+   {
+    "doc_datatype": "Check",
+    "doc_field": "is_internal_customer",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Check",
+    "registration_field": "is_internal_customer"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "represents_company",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "represents_company"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "market_segment",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "market_segment"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "industry",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "industry"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "customer_pos_id",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "customer_pos_id"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "website",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "website"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "language",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "language"
+   },
+   {
+    "doc_datatype": "Text",
+    "doc_field": "customer_details",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Text",
+    "registration_field": "customer_details"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "customer_primary_contact",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "customer_primary_contact"
+   },
+   {
+    "doc_datatype": "Read Only",
+    "doc_field": "mobile_no",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Read Only",
+    "registration_field": "mobile_no"
+   },
+   {
+    "doc_datatype": "Read Only",
+    "doc_field": "email_id",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Read Only",
+    "registration_field": "email_id"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "customer_primary_address",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "customer_primary_address"
+   },
+   {
+    "doc_datatype": "Text",
+    "doc_field": "primary_address",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Text",
+    "registration_field": "primary_address"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "tax_id",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "tax_id"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "tax_category",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "tax_category"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "tax_withholding_category",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "tax_withholding_category"
+   },
+   {
+    "doc_datatype": "Autocomplete",
+    "doc_field": "gstin",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Autocomplete",
+    "registration_field": "gstin"
+   },
+   {
+    "doc_datatype": "Data",
+    "doc_field": "pan",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Data",
+    "registration_field": "pan"
+   },
+   {
+    "doc_datatype": "Select",
+    "doc_field": "gst_category",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Select",
+    "registration_field": "gst_category"
+   },
+   {
+    "doc_datatype": "Link",
+    "doc_field": "payment_terms",
+    "parent": "Customer Mapping",
+    "parentfield": "customer_field_mapping",
+    "parenttype": "Customer Mapping",
+    "registration_datatype": "Link",
+    "registration_field": "payment_terms"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Customer Mapping",
+  "modified": "2023-06-16 22:41:54.107272",
+  "name": "Customer Mapping"
+ }
+]
