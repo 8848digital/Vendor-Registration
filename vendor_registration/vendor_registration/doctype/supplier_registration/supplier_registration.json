@@ -500,7 +500,7 @@
   },
   {
    "fieldname": "esic_registration",
-   "fieldtype": "Attach",
+   "fieldtype": "Data",
    "label": "ESIC Registration"
   },
   {
@@ -577,7 +577,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2023-06-16 22:24:37.988817",
+ "modified": "2023-06-19 21:39:30.725411",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Supplier Registration",
