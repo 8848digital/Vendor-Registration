@@ -18,6 +18,7 @@
   "supplier_group",
   "supplier_type",
   "is_transporter",
+  "supplier_created",
   "image",
   "defaults_section",
   "default_currency",
@@ -62,12 +63,19 @@
   "contact_and_address_tab",
   "address_contacts",
   "address_html",
+  "address_title",
+  "address_type",
+  "address_line1",
+  "address_line2",
+  "city",
   "column_break1",
+  "state",
+  "postal_code",
+  "mobile_no",
+  "email_id",
   "contact_html",
   "primary_address_and_contact_detail_section",
   "supplier_primary_contact",
-  "mobile_no",
-  "email_id",
   "column_break_44",
   "supplier_primary_address",
   "primary_address",
@@ -115,7 +123,8 @@
    "fieldname": "country",
    "fieldtype": "Link",
    "label": "Country",
-   "options": "Country"
+   "options": "Country",
+   "reqd": 1
   },
   {
    "fieldname": "column_break0",
@@ -293,14 +302,6 @@
    "label": "Contact & Address"
   },
   {
-   "depends_on": "eval:!doc.__islocal",
-   "fieldname": "address_contacts",
-   "fieldtype": "Section Break",
-   "label": "Address and Contacts",
-   "oldfieldtype": "Column Break",
-   "options": "fa fa-map-marker"
-  },
-  {
    "fieldname": "address_html",
    "fieldtype": "HTML",
    "label": "Address HTML",
@@ -332,14 +333,15 @@
   {
    "fetch_from": "supplier_primary_contact.mobile_no",
    "fieldname": "mobile_no",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Mobile No"
   },
   {
    "fetch_from": "supplier_primary_contact.email_id",
    "fieldname": "email_id",
-   "fieldtype": "Read Only",
-   "label": "Email Id"
+   "fieldtype": "Data",
+   "label": "Email Id",
+   "options": "Email"
   },
   {
    "fieldname": "column_break_44",
@@ -566,6 +568,58 @@
    "label": "Related Party",
    "options": "No\nYes",
    "translatable": 1
+  },
+  {
+   "fieldname": "address_title",
+   "fieldtype": "Data",
+   "label": "Address Title"
+  },
+  {
+   "fieldname": "address_type",
+   "fieldtype": "Select",
+   "label": "Address Type",
+   "options": "Billing\nShipping\nOffice\nPersonal\nPlant\nPostal\nShop\nSubsidiary\nWarehouse\nCurrent\nPermanent\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City/Town",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State/Province"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_contacts",
+   "fieldtype": "Section Break",
+   "label": "Address and Contacts",
+   "oldfieldtype": "Column Break",
+   "options": "fa fa-map-marker"
+  },
+  {
+   "fieldname": "supplier_created",
+   "fieldtype": "Read Only",
+   "label": "Supplier Created"
+  },
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
   }
  ],
  "icon": "fa fa-user",
@@ -577,7 +631,7 @@
    "link_fieldname": "party"
   }
  ],
- "modified": "2023-06-19 21:39:30.725411",
+ "modified": "2023-06-21 10:11:42.465044",
  "modified_by": "Administrator",
  "module": "Vendor Registration",
  "name": "Supplier Registration",
