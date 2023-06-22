@@ -160,6 +160,7 @@ class CustomerRegistration(TransactionBase):
 			)
 
 	def on_update(self):
+		
 		self.validate_name_with_customer_group()
 		self.create_primary_contact()
 		self.create_primary_address()
@@ -171,6 +172,15 @@ class CustomerRegistration(TransactionBase):
 			self.link_lead_address_and_contact()
 
 		self.update_customer_groups()
+		## after approved get data from map doc and create new customer
+		if self.workflow_state == "Approved":
+			# create customer map the field value from Customer Mapping
+			map = frappe.get_doc("Customer Mapping").customer_field_mapping
+			new_customer = frappe.new_doc("Customer")
+			# self has customer registration field
+			for i in map:
+				new_customer.__dict__[i.doc_field] = self.__dict__[i.registration_field]
+			new_customer.save()
 
 	def update_customer_groups(self):
 		ignore_doctypes = ["Lead", "Opportunity", "POS Profile", "Tax Rule", "Pricing Rule"]
