@@ -148,7 +148,22 @@ doc_events = {
     },
     "Item": {
         "after_insert": "vendor_registration.utils.link_update_item"
-    }
+    },
+    "Supplier Registration": {
+        "validate": [
+            "india_compliance.gst_india.overrides.supplier.validate_gst_transporter_id",
+            "india_compliance.gst_india.overrides.party.validate_party",
+        ],
+        "after_insert": (
+            "india_compliance.gst_india.overrides.party.create_primary_address"
+        ),
+    },
+    "Customer Registration": {
+        "validate": "india_compliance.gst_india.overrides.party.validate_party",
+        "after_insert": (
+            "india_compliance.gst_india.overrides.party.create_primary_address"
+        ),
+    },
 }
 # Scheduled Tasks
 # ---------------
