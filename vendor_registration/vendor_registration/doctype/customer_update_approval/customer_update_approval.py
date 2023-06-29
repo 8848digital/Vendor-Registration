@@ -4,6 +4,7 @@
 import frappe
 from frappe.model.document import Document
 from frappe.model.delete_doc import delete_from_table
+from frappe.desk.form.linked_with import get_child_tables_of_doctypes
 
 class CustomerUpdateApproval(Document):
 	
