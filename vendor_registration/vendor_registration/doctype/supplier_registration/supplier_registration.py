@@ -62,8 +62,8 @@ class SupplierRegistration(TransactionBase):
 				new_supplier.__dict__[i.doc_field] = self.__dict__[i.registration_field]
 			new_supplier.save()
 			# update new supplier name to supplier registration
-			frappe.db.sql(f'update `tabSupplier Registration` set supplier_created="{new_supplier.name}" where name="{self.name}"')
-			frappe.db.commit()
+				# frappe.db.sql(f'update `tabSupplier Registration` set supplier_created="{new_supplier.name}" where name="{self.name}"')
+				# frappe.db.commit()
 			## create Address and link address
 			addr = frappe.new_doc('Address')
 			addr.address_title = self.get('address_title')

@@ -58,7 +58,7 @@ fixtures = ["Supplier Mapping", "Customer Mapping",
             [
             "name","in",
                 [
-                "supplier-registration-form","customer-registration-form"
+                "supplier-registration-form","customer-registration-form","item-registration-form"
                 ]
             ]
         ]
