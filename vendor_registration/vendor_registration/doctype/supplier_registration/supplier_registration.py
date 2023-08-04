@@ -50,8 +50,8 @@ class SupplierRegistration(TransactionBase):
 		if not self.naming_series:
 			self.naming_series = ""
 
-		self.create_primary_contact()
-		self.create_primary_address()
+		# self.create_primary_contact()
+		# self.create_primary_address()
 		# after approved get mapped doc and create supplier
 		if self.get_doc_before_save() and (self.workflow_state != self.get_doc_before_save().workflow_state and self.workflow_state == "Approved"):
 			# create supplier map the field value from Supplier Mapping
