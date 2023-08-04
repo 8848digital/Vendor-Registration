@@ -63,6 +63,17 @@ fixtures = ["Supplier Mapping", "Customer Mapping",
             ]
         ]
     },
+    {
+        "dt": "Custom Field",
+        "filters": [
+            [
+            "dt","in",
+                [
+                "Supplier Registration", "Customer Registration", "Item Registration"
+                ]
+            ]
+        ]
+    },
 ]
 # Home Pages
 # ----------
