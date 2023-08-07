@@ -162,17 +162,17 @@ doc_events = {
     },
     "Supplier Registration": {
         "validate": [
-            "india_compliance.gst_india.overrides.supplier.validate",
-            "india_compliance.gst_india.overrides.party.validate_party",
+            "gst_india.gst_india.overrides.supplier.update_transporter_gstin",
+            "gst_india.gst_india.overrides.party.validate_party",
         ],
         "after_insert": (
-            "india_compliance.gst_india.overrides.party.create_primary_address"
+            "gst_india.gst_india.overrides.party.create_primary_address"
         ),
     },
     "Customer Registration": {
-        "validate": "india_compliance.gst_india.overrides.party.validate_party",
+        "validate": "gst_india.gst_india.overrides.party.validate_party",
         "after_insert": (
-            "india_compliance.gst_india.overrides.party.create_primary_address"
+            "gst_india.gst_india.overrides.party.create_primary_address"
         ),
     },
 }
