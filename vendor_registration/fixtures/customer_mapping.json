@@ -2,15 +2,6 @@
  {
   "customer_field_mapping": [
    {
-    "doc_datatype": "Select",
-    "doc_field": "naming_series",
-    "parent": "Customer Mapping",
-    "parentfield": "customer_field_mapping",
-    "parenttype": "Customer Mapping",
-    "registration_datatype": "Select",
-    "registration_field": "naming_series"
-   },
-   {
     "doc_datatype": "Link",
     "doc_field": "salutation",
     "parent": "Customer Mapping",
@@ -310,7 +301,7 @@
   ],
   "docstatus": 0,
   "doctype": "Customer Mapping",
-  "modified": "2023-06-16 22:41:54.107272",
+  "modified": "2023-08-28 13:29:12.214402",
   "name": "Customer Mapping"
  }
 ]

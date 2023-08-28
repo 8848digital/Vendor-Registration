@@ -2,18 +2,9 @@
  {
   "docstatus": 0,
   "doctype": "Supplier Mapping",
-  "modified": "2023-06-16 17:40:04.017442",
+  "modified": "2023-08-28 13:28:54.371447",
   "name": "Supplier Mapping",
   "supplier_field_mapping": [
-   {
-    "doc_datatype": "Select",
-    "doc_field": "naming_series",
-    "parent": "Supplier Mapping",
-    "parentfield": "supplier_field_mapping",
-    "parenttype": "Supplier Mapping",
-    "registration_datatype": "Select",
-    "registration_field": "naming_series"
-   },
    {
     "doc_datatype": "Data",
     "doc_field": "supplier_name",
