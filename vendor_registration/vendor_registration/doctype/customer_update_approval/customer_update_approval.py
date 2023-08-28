@@ -16,7 +16,7 @@ class CustomerUpdateApproval(Document):
 			updated_customer = frappe.get_doc("Customer", self.update_customer)
 			
 			doctype_fields = frappe.get_meta("Customer").get_fieldnames_with_value()
-			excluded_field = ['customer_name', 'customer_update_to', 'disabled', 'naming_series']
+			excluded_field = ['customer_update_to', 'disabled', 'naming_series']
 			fields = [field for field in doctype_fields if field not in excluded_field]
 	
 			child = get_child_tables_of_doctypes(['Customer'])['Customer']

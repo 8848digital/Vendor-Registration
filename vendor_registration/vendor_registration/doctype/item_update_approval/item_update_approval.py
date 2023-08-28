@@ -15,7 +15,7 @@ class ItemUpdateApproval(Document):
 			updated_item = frappe.get_doc("Item", self.update_item)
 			
 			doctype_fields = frappe.get_meta("Item").get_fieldnames_with_value()
-			excluded_field = ['item_name', 'item_code', 'item_update_to', 'disabled', 'naming_series']
+			excluded_field = ['item_code', 'item_update_to', 'disabled', 'naming_series']
 			fields = [field for field in doctype_fields if field not in excluded_field]
 	
 			child = get_child_tables_of_doctypes(['Item'])['Item']

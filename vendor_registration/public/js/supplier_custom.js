@@ -10,7 +10,8 @@ frappe.ui.form.on("Supplier", {
     
                 var new_sup = frappe.model.copy_doc(frm.doc);
                 // update value to new_supp like from where it has been copied
-                new_sup.supplier_name = "UPDATE "+frm.doc.name+"_"+nanoid(10)
+                // new_sup.supplier_name = "UPDATE "+frm.doc.name+"_"+nanoid(10)
+                new_sup.supplier_name = frm.doc.supplier_name
                 new_sup.supplier_update_from = frm.doc.name
                 new_sup.disabled = 1
                 let df = frappe.meta.get_docfield(new_sup.doctype, "disabled", new_sup.name);

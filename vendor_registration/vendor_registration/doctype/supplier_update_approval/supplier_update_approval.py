@@ -16,7 +16,7 @@ class SupplierUpdateApproval(Document):
 			updated_supplier = frappe.get_doc("Supplier", self.update_supplier)
 			
 			doctype_fields = frappe.get_meta("Supplier").get_fieldnames_with_value()
-			excluded_field = ['supplier_name', 'supplier_update_from', 'disabled', 'naming_series']
+			excluded_field = ['supplier_update_from', 'disabled', 'naming_series']
 			fields = [field for field in doctype_fields if field not in excluded_field]
 	
 			child = get_child_tables_of_doctypes(['Supplier'])['Supplier']

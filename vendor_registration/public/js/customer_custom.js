@@ -10,7 +10,8 @@ frappe.ui.form.on("Customer", {
     
                 var new_cust = frappe.model.copy_doc(frm.doc);
                 // update value to new_cust like from where it has been copied
-                new_cust.customer_name = "UPDATE "+frm.doc.name+"_"+nanoid(10)
+                // new_cust.customer_name = "UPDATE "+frm.doc.name+"_"+nanoid(10)
+                new_cust.customer_name = frm.doc.customer_name
                 new_cust.customer_update_to = frm.doc.name
                 new_cust.disabled = 1
                 let df = frappe.meta.get_docfield(new_cust.doctype, "disabled", new_cust.name);
