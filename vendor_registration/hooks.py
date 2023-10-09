@@ -161,19 +161,19 @@ doc_events = {
         "after_insert": "vendor_registration.utils.link_update_item"
     },
     "Supplier Registration": {
-        "validate": [
-            "gst_india.gst_india.overrides.supplier.update_transporter_gstin",
-            "gst_india.gst_india.overrides.party.validate_party",
-        ],
-        "after_insert": (
-            "gst_india.gst_india.overrides.party.create_primary_address"
-        ),
+        # "validate": [
+        #     "gst_india.gst_india.overrides.supplier.update_transporter_gstin",
+        #     "gst_india.gst_india.overrides.party.validate_party",
+        # ],
+        # "after_insert": (
+        #     "gst_india.gst_india.overrides.party.create_primary_address"
+        # ),
     },
     "Customer Registration": {
-        "validate": "gst_india.gst_india.overrides.party.validate_party",
-        "after_insert": (
-            "gst_india.gst_india.overrides.party.create_primary_address"
-        ),
+        # "validate": "gst_india.gst_india.overrides.party.validate_party",
+        # "after_insert": (
+        #     "gst_india.gst_india.overrides.party.create_primary_address"
+        # ),
     },
 }
 # Scheduled Tasks
